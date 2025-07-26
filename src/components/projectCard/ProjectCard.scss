@@ -1,0 +1,211 @@
+@import "../../_globalColor";
+
+.project-card {
+  position: relative;
+  background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+  transition: box-shadow 0.3s, max-height 0.4s cubic-bezier(0.4,0,0.2,1), padding 0.3s;
+  max-height: 28rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-card-dark {
+  position: relative;
+  background-color: $darkBackground;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+  transition: box-shadow 0.3s, max-height 0.4s cubic-bezier(0.4,0,0.2,1), padding 0.3s;
+  max-height: 28rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-card.expanded,
+.project-card-dark.expanded {
+  max-height: 60rem;
+  box-shadow: $lightBoxShadowDark 0px 24px 48px -10px;
+  z-index: 2;
+  padding-bottom: 1.5rem;
+  overflow: visible;
+}
+
+.project-card:hover,
+.project-card-dark:hover {
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+}
+
+.project-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background: $experienceCardBannerLG;
+  border-radius: 10px 10px 0px 0px;
+  filter: blur(0px);
+  height: 11rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.project-blurred_div {
+  position: absolute;
+  background: $experienceCardBlurredDivLG;
+  filter: blur(5px);
+  height: 11rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.project-div-name {
+  position: absolute;
+  background: transparent;
+  height: 9rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-text-name {
+  text-align: center;
+  padding: 1.5rem;
+  margin: 0;
+  color: $lightBackground1;
+  font-size: 25px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.project-roundedimg {
+  position: absolute;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  border-radius: 50%;
+  transition: box-shadow 0.3s;
+}
+
+.project-text-date {
+  text-align: center;
+  color: $textColor;
+  font-size: 20px;
+  margin: 0px;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+.project-text-desc {
+  text-align: center;
+}
+
+.project-text-details {
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.dark-mode-text {
+  color: $textColorDark !important;
+}
+
+/* Expanded content styles */
+.project-expanded-content {
+  margin-top: 1.5rem;
+  animation: expandFadeIn 0.3s;
+}
+
+@keyframes expandFadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.project-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  gap: 1rem;
+}
+
+.slider-arrow {
+  background: none;
+  border: none;
+  color: $textColor;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.2rem 0.7rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+  user-select: none;
+}
+
+.slider-arrow:hover,
+.slider-arrow:focus {
+  background: $lightBackground1;
+  outline: none;
+}
+
+.slider-image {
+  max-width: 320px;
+  max-height: 220px;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  object-fit: contain;
+  background: $lightBackground2;
+}
+
+.project-desc-bullets {
+  margin-top: 1.2rem;
+  padding-left: 1.5rem;
+  list-style: disc inside;
+}
+
+/* Media Query */
+
+@media (max-width: 1380px) {
+  .project-text-name {
+    font-size: 22px;
+  }
+  .project-text-date {
+    font-size: 18px;
+  }
+  .project-roundedimg {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .slider-image {
+    max-width: 220px;
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-text-name {
+    font-size: 22px;
+  }
+  .project-text-date {
+    font-size: 18px;
+  }
+  .project-text-desc {
+    font-size: 16px;
+  }
+  .slider-image {
+    max-width: 140px;
+    max-height: 100px;
+  }
+} 
