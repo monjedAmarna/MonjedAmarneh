@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MonjedAmarneh/static/css/main.518d79de.css",
-    "main.js": "/MonjedAmarneh/static/js/main.7c2c2576.js",
+    "main.css": "/MonjedAmarneh/static/css/main.098cc082.css",
+    "main.js": "/MonjedAmarneh/static/js/main.7295e310.js",
     "static/css/769.b3cbb36b.chunk.css": "/MonjedAmarneh/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/MonjedAmarneh/static/js/769.bda0d7b7.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/MonjedAmarneh/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
@@ -24,13 +24,13 @@
     "static/media/nextuLogo.webp": "/MonjedAmarneh/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
     "index.html": "/MonjedAmarneh/index.html",
     "static/media/talksCardBack.svg": "/MonjedAmarneh/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.518d79de.css.map": "/MonjedAmarneh/static/css/main.518d79de.css.map",
-    "main.7c2c2576.js.map": "/MonjedAmarneh/static/js/main.7c2c2576.js.map",
+    "main.098cc082.css.map": "/MonjedAmarneh/static/css/main.098cc082.css.map",
+    "main.7295e310.js.map": "/MonjedAmarneh/static/js/main.7295e310.js.map",
     "769.b3cbb36b.chunk.css.map": "/MonjedAmarneh/static/css/769.b3cbb36b.chunk.css.map",
     "769.bda0d7b7.chunk.js.map": "/MonjedAmarneh/static/js/769.bda0d7b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.518d79de.css",
-    "static/js/main.7c2c2576.js"
+    "static/css/main.098cc082.css",
+    "static/js/main.7295e310.js"
   ]
 }
