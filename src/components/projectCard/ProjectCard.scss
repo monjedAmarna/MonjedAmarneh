@@ -175,6 +175,32 @@
   list-style: disc inside;
 }
 
+.project-footer-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.project-link-button {
+  background: $experienceCardBannerLG;
+  color: $lightBackground1;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.project-link-button:hover {
+  background: $experienceCardBlurredDivLG;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Media Query */
 
 @media (max-width: 1380px) {

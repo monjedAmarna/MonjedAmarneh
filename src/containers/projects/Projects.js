@@ -25,11 +25,31 @@ export default function Projects() {
     ]
   };
 
+  const monjedFinanceCardInfo = {
+    projectName: "monjed finance",
+    desc: "A simple mock application for personal finance management, designed for everyday individuals. This is a demo project and contains non-real data.",
+    date: "December 2024",
+    projectLogo: require("../../assets/images/freelance.png"),
+    descBullets: [
+      "Personal finance management application",
+      "Simple and intuitive user interface",
+      "Demo project with mock data",
+      "Built for everyday users"
+    ],
+    footerLink: [
+      {
+        name: "View",
+        url: "https://monjedamarna.github.io/monjed-finance/#/"
+      }
+    ]
+  };
+
   return (
     <div className="main project-section" id="projects">
       <h1 className="project-section-heading">Projects</h1>
       <div className="project-cards-div">
         <ProjectCard cardInfo={chronicareCardInfo} isDark={isDark} />
+        <ProjectCard cardInfo={monjedFinanceCardInfo} isDark={isDark} />
       </div>
     </div>
   );

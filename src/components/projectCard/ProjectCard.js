@@ -139,6 +139,21 @@ export default function ProjectCard({ cardInfo, isDark }) {
             )}
           </div>
         )}
+        {cardInfo.footerLink && cardInfo.footerLink.length > 0 && (
+          <div className="project-footer-links" onClick={e => e.stopPropagation()}>
+            {cardInfo.footerLink.map((link, i) => (
+              <a
+                key={i}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link-button"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -159,6 +174,12 @@ ProjectCard.propTypes = {
         PropTypes.string,
         PropTypes.object
       ])
+    ),
+    footerLink: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired
+      })
     )
   }).isRequired,
   isDark: PropTypes.bool
